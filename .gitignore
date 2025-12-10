@@ -1,0 +1,45 @@
+# Arduino IDE
+*.ino~
+*.hex
+*.eep
+*.elf
+*.map
+
+# VS Code
+.vscode/
+.pio/
+
+# PlatformIO
+.pioenvs
+.piolibdeps
+
+# Build artifacts
+build/
+*.o
+*.a
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Credentials (IMPORTANT: Don't commit sensitive data)
+config.h
+credentials.h
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Compressed files (optional - uncomment if needed)
+# *.zip
+# *.rar
+# *.7z
