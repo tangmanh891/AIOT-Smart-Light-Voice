@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible defect in firmware or setup
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened and what did you expect?
+      placeholder: Short and clear bug summary
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include exact sequence, voice command, app action, button action, etc.
+      placeholder: |
+        1. Flash firmware ...
+        2. Say "Hello den" ...
+        3. Press button ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Hardware and software versions
+      placeholder: |
+        - Board: ESP32 DevKit
+        - Arduino core: 2.x
+        - Firmware branch/commit: ...
+        - Libraries: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / serial output
+      description: Paste relevant Serial Monitor output
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues before creating this one
+          required: true
+        - label: I used `secrets.h` and did not commit credentials
+          required: true

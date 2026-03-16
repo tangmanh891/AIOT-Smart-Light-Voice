@@ -1,0 +1,36 @@
+name: Chore / maintenance
+description: Track non-feature engineering work
+title: "[Chore]: "
+labels:
+  - chore
+  - needs-triage
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task description
+      description: What maintenance work is needed?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Dependency update
+        - CI/CD
+        - Documentation
+        - Refactor
+        - Tooling
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: What should be true after completion?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
