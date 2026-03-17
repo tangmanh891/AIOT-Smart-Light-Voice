@@ -9,7 +9,7 @@ Hệ thống điều khiển đèn thông minh sử dụng **ESP32** và micro *
 
 ## 🎬 Demo
 
-https://github.com/user-attachments/assets/demo.mp4
+https://github.com/tangmanh891/AIOT-Smart-Light-Voice/blob/main/demo.mp4
 
 ## ✨ Tính Năng
 
